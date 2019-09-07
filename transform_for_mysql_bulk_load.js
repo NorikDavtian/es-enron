@@ -62,9 +62,12 @@ fs.readdir(sourceDir, function(err, files) {
 				},
 				{
 					value: 'text'
+				},
+				{
+					value: 'date'
 				}
 			],
-			del: "\t",
+			del: ",",
 			hasCSVColumnTitle: false
 		}, function(err, csv) {
 			console.log(csv);
